@@ -1,17 +1,21 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
+  "name": "enigma-virtualbox-action",
+  "description": "GitHub Action for generating an \"Enigma Virtual Box\" project file.",
   "version": "0.0.0",
-  "author": "",
+  "author": {
+    "name": "kjxbyz",
+    "email": "hello@kjxbyz.com",
+    "url": "https://github.com/kjxbyz"
+  },
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/actions/typescript-action",
+  "homepage": "https://github.com/insco-inc/enigma-virtualbox-action",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/insco-inc/enigma-virtualbox-action.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/typescript-action/issues"
+    "url": "https://github.com/insco-inc/enigma-virtualbox-action/issues"
   },
   "keywords": [
     "actions"

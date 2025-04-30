@@ -30,6 +30,13 @@ inputs:
     description: Regular expression. Files to exclude.
     default: ''
 
+  project-template:
+    description: Path to a project template
+  dir-template:
+    description: Path to a directory template
+  file-template:
+    description: Path to a file template
+
   delete-extracted-on-exit:
     description: Whether to delete extracted on exit.
     default: 'False'

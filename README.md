@@ -18,11 +18,14 @@ steps:
     id: test-action
     uses: insco-inc/enigma-virtualbox-action@v1 # Commit with the `v1` tag
     with:
-      milliseconds: 1000
+      entry: .github
+      input: LICENSE
+      output: README.md
+      exclude: '**/licensed.yml'
 
   - name: Print Output
     id: output
-    run: echo "${{ steps.test-action.outputs.time }}"
+    run: echo "${{ steps.test-action.outputs.config-path }}"
 ```
 
 ## Tests
@@ -37,11 +40,14 @@ steps:
     id: test-action
     uses: ./
     with:
-      milliseconds: 1000
+      entry: .github
+      input: LICENSE
+      output: README.md
+      exclude: '**/licensed.yml'
 
   - name: Print Output
     id: output
-    run: echo "${{ steps.test-action.outputs.time }}"
+    run: echo "${{ steps.test-action.outputs.config-path }}"
 ```
 
 ## License

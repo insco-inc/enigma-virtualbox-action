@@ -24,6 +24,11 @@ export async function run(): Promise<void> {
     const projectName: string = core.getInput('project-name') || 'project.evb'
     const exclude: string = core.getInput('exclude')
 
+    // Template
+    const projectTemplatePath: string = core.getInput('project-template')
+    const dirTemplatePath: string = core.getInput('dir-template')
+    const fileTemplatePath: string = core.getInput('file-template')
+
     // EVB Options
     const deleteExtractedOnExit: string = core.getInput(
       'delete-extracted-on-exit'
@@ -48,6 +53,15 @@ export async function run(): Promise<void> {
       output,
       projectName: projectName,
       exclude: exclude,
+      ...(projectTemplatePath && dirTemplatePath && fileTemplatePath
+        ? {
+            templatePath: {
+              ...(projectTemplatePath && { project: projectTemplatePath }),
+              ...(dirTemplatePath && { dir: dirTemplatePath }),
+              ...(fileTemplatePath && { file: fileTemplatePath })
+            }
+          }
+        : {}),
       evbOptions: {
         deleteExtractedOnExit: deleteExtractedOnExit,
         compressFiles: compressFiles,

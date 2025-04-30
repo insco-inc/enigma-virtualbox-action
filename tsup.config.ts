@@ -26,7 +26,7 @@ export default defineConfig([
     ...options,
     entry: ['src/index.ts'],
     dts: false,
-    noExternal: ['@insco/enigma-virtualbox'],
+    noExternal: ['@actions/core', '@insco/enigma-virtualbox'],
     sourcemap: true
   }
 ])

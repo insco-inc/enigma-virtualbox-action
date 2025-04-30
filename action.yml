@@ -4,20 +4,55 @@ author: kjxbyz
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: heart
-  color: red
+  icon: box
+  color: blue
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: Your input description here
+  entry:
+    description: Entry directory
     required: true
-    default: '1000'
+    default: '.'
+  input:
+    description:
+      The input executable file path. Enigma packs the files from path2Pack into
+      a copy of this executable.
+    required: true
+  output:
+    description:
+      The output executable file path. Enigma saves the packed file to this
+      path.
+    required: true
+  project-name:
+    description: The file name to which we want to save the generated evb file.
+    default: 'project.evb'
+  exclude:
+    description: Regular expression. Files to exclude.
+    default: ''
+
+  delete-extracted-on-exit:
+    description: Whether to delete extracted on exit.
+    default: 'False'
+  compress-files:
+    description: Whether to compress files.
+    default: 'False'
+  share-virtual-system:
+    description: Share virtual system to child processes.
+    default: 'False'
+  map-executable-with-temporary-file:
+    description: Map executable files using temporary file.
+    default: 'True'
+  allow-running-of-virtual-exe-files:
+    description: Allow running of virtual executable files.
+    default: 'True'
+  processes-of-any-platforms:
+    description: Share to processes of any platforms.
+    default: 'False'
 
 # Define your outputs here.
 outputs:
-  time:
-    description: Your output description here
+  config-path:
+    description: Absolute path to the configuration file.
 
 runs:
   using: node20

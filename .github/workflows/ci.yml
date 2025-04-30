@@ -57,8 +57,14 @@ jobs:
         id: test-action
         uses: ./
         with:
-          milliseconds: 2000
+          entry: .github
+          input: LICENSE
+          output: README.md
+          exclude: '**/licensed.yml'
 
       - name: Print Output
         id: output
-        run: echo "${{ steps.test-action.outputs.time }}"
+        run: echo "${{ steps.test-action.outputs.config-path }}"
+
+      - name: Print Config
+        run: cat ${{ steps.test-action.outputs.config-path }}

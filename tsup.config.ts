@@ -1,5 +1,4 @@
 import { defineConfig, type Options } from 'tsup'
-// @ts-ignore
 import * as pkgInfo from './package.json'
 
 const banner = `

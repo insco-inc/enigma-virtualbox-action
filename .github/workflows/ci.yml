@@ -61,9 +61,6 @@ jobs:
           input: LICENSE
           output: README.md
           exclude: '**/licensed.yml'
-          project-template: node_modules/@insco/enigma-virtualbox/templates/project.template.hbs
-          dir-template: node_modules/@insco/enigma-virtualbox/templates/dir.template.hbs
-          file-template: node_modules/@insco/enigma-virtualbox/templates/file.template.hbs
 
       - name: Print Output
         id: output

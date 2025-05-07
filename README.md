@@ -1,6 +1,6 @@
 # Enigma Virtualbox Action
 
-[![GitHub Super-Linter](https://github.com/insco-inc/enigma-virtualbox-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
+![GitHub Super-Linter](https://github.com/insco-inc/enigma-virtualbox-action/actions/workflows/linter.yml/badge.svg)
 ![CI](https://github.com/insco-inc/enigma-virtualbox-action/actions/workflows/ci.yml/badge.svg)
 [![Check dist/](https://github.com/insco-inc/enigma-virtualbox-action/actions/workflows/check-dist.yml/badge.svg)](https://github.com/insco-inc/enigma-virtualbox-action/actions/workflows/check-dist.yml)
 [![CodeQL](https://github.com/insco-inc/enigma-virtualbox-action/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/insco-inc/enigma-virtualbox-action/actions/workflows/codeql-analysis.yml)

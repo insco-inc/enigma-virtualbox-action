@@ -1,15 +1,16 @@
 ---
-name: fdir
-version: 6.4.4
+name: chalk
+version: 5.4.1
 type: npm
-summary: The fastest directory crawler & globbing alternative to glob, fast-glob,
-  & tiny-glob. Crawls 1m files in < 1s
-homepage: https://github.com/thecodrr/fdir#readme
+summary: Terminal string styling done right
+homepage:
 license: mit
 licenses:
-- sources: LICENSE
+- sources: license
   text: |
-    Copyright 2023 Abdullah Atta
+    MIT License
+
+    Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

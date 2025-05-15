@@ -23,7 +23,7 @@
     ".": "./dist/index.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=20.18.1"
   },
   "scripts": {
     "bundle": "npm run format:write && npm run package",
@@ -41,7 +41,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@insco/enigma-virtualbox": "^1.3.0"
+    "@insco/enigma-virtualbox": "^1.3.1"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.8",

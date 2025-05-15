@@ -1,7 +1,7 @@
 {
   "name": "enigma-virtualbox-action",
   "description": "GitHub Action for generating an \"Enigma Virtual Box\" project file.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "kjxbyz",
     "email": "hello@kjxbyz.com",
